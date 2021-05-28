@@ -1,0 +1,61 @@
+.card-container {
+  & .card {
+    width: 300px;
+    height: 200px;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 10px;
+    position: relative;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+      
+    }
+    &:hover .data-container {
+      opacity: 1;
+      z-index: 20;
+    }
+    
+
+    & .data-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-color:rgba(0,0,255,0.5);;
+      color: white;
+      opacity: 0;
+      & ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        & li{
+          mix-blend-mode: difference;
+          font-size: 32px;
+          list-style: none;
+          font-weight: bold;
+        }
+      }
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+
+      
+     
+
+    }
+  }
+}
+
+.countries ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
